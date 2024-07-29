@@ -1,10 +1,9 @@
 Для запуска приложения потребуется:
 1. Скопировать репозиторий: https://github.com/Vicki-art/UpTrader_test.git;
 2. Установить Django(4.2.3) и python (ver=3.11), при необходимости;
-3. Применить миграции и запустить сервер:
-   python3 manage.py migrate
-   python3 manage.py runserver
-
+3. Применить миграции (python3 manage.py migrate);
+4. Запустить сервер (python3 manage.py).
+   
 Использование
 Создание меню
 Меню можно создавать через стандартную админку Django. Для этого нужно зайти на страницу http://127.0.0.1:8000/admin/menu_tree/menu/, где http://localhost:8000 - адрес вашего приложения.
