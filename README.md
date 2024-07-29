@@ -2,7 +2,7 @@
 1. Скопировать репозиторий: https://github.com/Vicki-art/UpTrader_test.git;
 2. Установить Django(4.2.3) и python (ver=3.11), при необходимости;
 3. Применить миграции (python3 manage.py migrate);
-4. Запустить сервер (python3 manage.py).
+4. Запустить сервер (python3 manage.py runserver).
    
 Использование
 Создание меню
