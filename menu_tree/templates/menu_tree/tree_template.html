@@ -1,0 +1,9 @@
+{% load menu_tags %}
+{% if menus %}
+    <h1>{{menu_name}}</h1>
+    {% draw_leave menus %}
+{% else %}
+    <p>Menu '{{ menu_name }}' does not exist</p>
+{% endif %}
+
+

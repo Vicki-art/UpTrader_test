@@ -1,0 +1,20 @@
+{% load menu_tags %}
+
+{% for leave in leaves %}
+    {% with leave.children as item_set %}
+        <ul>
+            <details {% if leave.open %} open {% endif %}>
+                {% if leave.current%}
+                    <summary><b><a href = {{leave.url}}> {{leave.title}}</a></b></summary>
+                {% else %}
+                    <summary><a href = {{leave.url}}> {{leave.title}}</a></summary>
+                {% endif %}
+
+                {% if item_set %}
+                    {% draw_leave item_set %}
+                {%endif%}
+            </details>
+        </ul>
+    {% endwith %}
+{% endfor %}
+
