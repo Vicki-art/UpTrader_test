@@ -26,8 +26,7 @@ Usage tips:
 Here you can create your menu by setting the name and uri.
 2) Submenus can also be created in Django admin panel (link: http://127.0.0.1:8000/admin/menu_tree/submenu/).
 3) To display the menu, you need to load the template tag:
-{% load menu_tags %} and then call this tag in the required place in html template {% draw_menu 'requested_menu' %}
+{% load menu_tags %} and then call this tag in the required place in html template {% draw_menu 'requested_menu' %}, where requested_menu is a given menu name.
 
-* requested_menu - given menu name.
-*Tag draw_menu will draw a tree menu based on the elements created in the admin panel.
+Tag draw_menu will draw a tree menu based on the elements created in the admin panel.
 
